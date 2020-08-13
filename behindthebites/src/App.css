@@ -1,0 +1,51 @@
+.nav {
+  background-color: #E9C46A;
+  height:6em;
+}
+
+.nav-item {
+  color:white;
+}
+
+
+
+
+/* FOOTER */
+.footer-content {
+  margin-left: 3em;
+}
+
+.footer-title {
+  font-size: 1em;
+  margin-bottom: .75em;
+  font-weight: bold;
+}
+
+/* hr styling */
+hr {
+  margin-bottom: 2em;
+}
+
+.footer-content-divider {
+  margin-top: 3em;
+}
+
+.footer-credits-divider {
+  margin-left: -1em;
+}
+
+.footer-credits {
+  margin-left: -2em;
+}
+
+/* footer links */
+.links {
+  list-style-type:none;
+  padding-left: 0;
+}
+
+.links li a {
+  color: #212529;
+}
+
+/* END FOOTER */
