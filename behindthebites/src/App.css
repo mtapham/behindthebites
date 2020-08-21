@@ -75,3 +75,18 @@ hr {
 }
 
 /* END FOOTER */
+/* backgrounds:
+https://www.google.com/maps/vt/data=wG3SDW5gg8FBIt_9gpkVkvQScI0TqKSCks9x6UE33VAmiiAf3S-q7aKA_oU6898OZfEFC6PvGmTMUJ0Ej0JjI7Jpr1fH9ugADwP4Jkpig6zDZ6-iJT4uMUpVYXh72M0u1zCGZuzRQeVPqygk4SRpZ0UVMvVrigNBPlASgDC6XwGql9kF70PBUKGlkfR0l9OM2cdEP7eeifjUfB0XQTstMOhCRW_V3mVT2zvKp8UMpqDAZjSX9wyBANyImNwW6WjQOS66D07CmElBm0sop2Z4w6MuOucS1F9zrFB3_x7_0ZUKns5kPA5lkLWM7pLcMCh2JzzQbJVI
+
+https://www.google.com/maps/d/thumbnail?mid=1otK_xPwRrWnyyK8XZQEajGXNSlU
+
+*/
+
+.home-grid {
+  background-image: url("https://www.google.com/maps/d/thumbnail?mid=1otK_xPwRrWnyyK8XZQEajGXNSlU"); /* The image used */
+  background-color: #2A9D8F; /* Used if the image is unavailable */
+  height:800px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 50%; /* Resize the background image to cover the entire container */
+}
