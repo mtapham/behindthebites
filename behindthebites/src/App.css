@@ -7,12 +7,42 @@
   color:white;
 }
 
+/* Stories */
+.search-restaurants-bg {
+  margin: 0em;
+  overflow: auto; 
+  background-color: #212529;
+}
+.search-restaurants-banner {
+  width:60em;
+}
+
+.stories-content {
+  height: 37em;
+}
+
+.bg-text {
+  color:white;
+}
+
+.seattle-map {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/eYBxQhBCLvzwGN5Fh8Jsyg-970-80.jpg");
+  background-size: 40em 50em;
+  max-height: 40em;
+  background-position-y: -10em;
+  background-repeat: no-repeat;
+  margin-left: 0em;
+}
 
 
 
 /* FOOTER */
 .footer-content {
   margin-left: 3em;
+}
+
+.footer-content-divider {
+  margin-top: 0em;
 }
 
 .footer-title {
@@ -24,10 +54,6 @@
 /* hr styling */
 hr {
   margin-bottom: 2em;
-}
-
-.footer-content-divider {
-  margin-top: 3em;
 }
 
 .footer-credits-divider {
