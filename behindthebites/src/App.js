@@ -6,7 +6,7 @@ import Header from './Header.js';
 import {Home} from './Home.js';
 import {Stories} from './Stories.js';
 import {AboutUs} from './AboutUs.js';
-import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import './css/App.css';
 

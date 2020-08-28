@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
 
 /* Fonts */
-
 * {
   font-family: 'Lato';
   box-sizing: border-box;
@@ -28,6 +27,86 @@ p, .card-title, .card-text {
 
 .nav-item {
   color:white;
+}
+/* Home Page */
+
+.landing-pic{
+  /* text-align: center;
+  width: 1366px;
+  height: 768px; */
+  background: rgb(233,196,106);
+  background: linear-gradient(180deg, rgba(233,196,106,1) 0%, rgba(244,162,97,1) 81%);
+  height: 1200px;
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+}
+
+.statement {
+  top: 50px;
+  height: 200px;
+  line-height: 280px;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  /* padding: 10px; */
+  position: relative;
+  border: 3px solid #212529;
+}
+
+.story-title{
+  position: relative;
+  top: 150px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+.earls-image{
+  position: relative;
+  top: 180px;
+  width: fit-content;
+  /* left: 50%; */
+  margin: 0 auto;
+}
+
+.story-text{
+  position: relative;
+  top: 190px;
+  padding: 5px;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: large;
+}
+
+.more-stories{
+  position: relative;
+  top: 310px;
+  font-size: 24px;
+  padding: 5px;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.link{
+  position: relative;
+  top: 310px;
+  font-size: 24px;
+  padding: 5px;
+  width: 40%;
+  display: block; 
+  text-align: center;
+  margin: 0 auto;
+  left: auto;
+  color: #264653;
 }
 
 /* Stories */
@@ -188,21 +267,6 @@ hr {
 }
 
 /* END FOOTER */
-/* backgrounds:
-https://www.google.com/maps/vt/data=wG3SDW5gg8FBIt_9gpkVkvQScI0TqKSCks9x6UE33VAmiiAf3S-q7aKA_oU6898OZfEFC6PvGmTMUJ0Ej0JjI7Jpr1fH9ugADwP4Jkpig6zDZ6-iJT4uMUpVYXh72M0u1zCGZuzRQeVPqygk4SRpZ0UVMvVrigNBPlASgDC6XwGql9kF70PBUKGlkfR0l9OM2cdEP7eeifjUfB0XQTstMOhCRW_V3mVT2zvKp8UMpqDAZjSX9wyBANyImNwW6WjQOS66D07CmElBm0sop2Z4w6MuOucS1F9zrFB3_x7_0ZUKns5kPA5lkLWM7pLcMCh2JzzQbJVI
-
-https://www.google.com/maps/d/thumbnail?mid=1otK_xPwRrWnyyK8XZQEajGXNSlU
-
-*/
-
-.home-grid {
-  background-image: url("https://www.google.com/maps/d/thumbnail?mid=1otK_xPwRrWnyyK8XZQEajGXNSlU"); /* The image used */
-  background-color: #2A9D8F; /* Used if the image is unavailable */
-  height:800px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: 50%; /* Resize the background image to cover the entire container */
-}
 
 /* @media (min-width: 768px) {
 
