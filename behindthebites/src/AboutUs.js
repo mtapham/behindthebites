@@ -1,8 +1,8 @@
 import React, { Component } from 'react'; //import React Component
 import Container from 'react-bootstrap/Container';
-import pic from './group.PNG';
+import pic from './img/group.PNG';
 
-import './App.css';
+import './css/App.css';
 
 export class AboutUs extends Component {
     render() {

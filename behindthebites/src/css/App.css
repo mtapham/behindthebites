@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+
+/* Fonts */
+
+* {
+  font-family: 'Lato';
+  box-sizing: border-box;
+}
+
+.nav-brand, h1, .card-title {
+  font-family: 'Karla';
+}
+
+h1 {
+  font-weight: 700;
+  font-size:3em
+}
+
+p, .card-title, .card-text {
+  font-weight: 400;
+}
+
+.nav {
+  background-color: white;
+  height:6em;
+}
+
+.nav-item {
+  color:white;
+}
+
+/* Stories */
+
+/* Jumbotron Styling */
+.bg-img {
+  background-image: url(../img/bg.png);
+  background-position: -4em -1em;
+  background-size: 100em 30em;
+  background-repeat: no-repeat;
+}
+
+.dine-in-img {
+  margin-top: 2em;
+  margin-left: 5em;
+  width: 35em;
+  display:none;
+}
+
+.search-restaurants-banner-contents{
+  margin-left:3em;
+}
+
+.bg-text {
+  color:white;
+}
+
+
+.sticky-popup {
+  position: sticky;
+  bottom: 0;
+}
+
+/* Pop up Accordian card */
+
+.how-to-help {
+  display:none;
+}
+
+.how-to-help-card {
+  height:25em;
+}
+
+.carousel-indicators li {
+  display: none;
+}
+
+/* Restaurant Row Styling */
+.restaurant-row {
+  margin-bottom: 1em;
+}
+
+.reset {
+  vertical-align: baseline;
+  color:white;
+}
+
+.preview-carousel {
+  width:17em;
+}
+
+.restaurant-preview-imgs {
+  object-fit: cover;
+  width:17em;
+  height:13em;
+  border-radius: 2%;
+}
+
+.restaurant-row:hover {
+  cursor: pointer;
+}
+
+/* Restaurant Profile Modal */
+
+
+/* restaurant contact card */
+.modal-carousel {
+  height:16.5em;
+}
+.restaurant-contact-info {
+  height:16.5em;
+}
+
+.restaurant-name, .restaurant-year, .restaurant-number, .restaurant-address{
+  margin-bottom: .3em;
+}
+
+.restaurant-tags {
+  margin-bottom: 1em;
+}
+
+.tag {
+  margin-right:.3em;
+}
+
+.icons {
+  margin-right: .5em;
+}
+
+.restaurant-contact-info {
+  margin-bottom: 1em;
+}
+
+
+/* photo gallery */
+.restaurant-imgs {
+  object-fit: cover;
+  width:18em;
+  height:16.5em;
+  border-radius: 2%;
+}
+
+/* story contents */
+.story-credits {
+  font-style: italic;
+}
+
+.story-content {
+  padding-bottom: 1.5em;
+}
+
+/* FOOTER */
+.footer-content {
+  margin-left: 3em;
+}
+
+.footer-title {
+  font-size: 1em;
+  margin-bottom: .75em;
+  font-weight: bold;
+}
+
+/* hr styling */
+hr {
+  margin-bottom: 2em;
+}
+
+.footer-credits-divider {
+  margin-left: -1em;
+}
+
+.footer-credits {
+  margin-left: -2em;
+}
+
+/* footer links */
+.links {
+  list-style-type:none;
+  padding-left: 0;
+}
+
+.links li {
+  margin-bottom:.75em;
+}
+.links li a {
+  color: #212529;
+  
+}
+
+/* END FOOTER */
+/* backgrounds:
+https://www.google.com/maps/vt/data=wG3SDW5gg8FBIt_9gpkVkvQScI0TqKSCks9x6UE33VAmiiAf3S-q7aKA_oU6898OZfEFC6PvGmTMUJ0Ej0JjI7Jpr1fH9ugADwP4Jkpig6zDZ6-iJT4uMUpVYXh72M0u1zCGZuzRQeVPqygk4SRpZ0UVMvVrigNBPlASgDC6XwGql9kF70PBUKGlkfR0l9OM2cdEP7eeifjUfB0XQTstMOhCRW_V3mVT2zvKp8UMpqDAZjSX9wyBANyImNwW6WjQOS66D07CmElBm0sop2Z4w6MuOucS1F9zrFB3_x7_0ZUKns5kPA5lkLWM7pLcMCh2JzzQbJVI
+
+https://www.google.com/maps/d/thumbnail?mid=1otK_xPwRrWnyyK8XZQEajGXNSlU
+
+*/
+
+.home-grid {
+  background-image: url("https://www.google.com/maps/d/thumbnail?mid=1otK_xPwRrWnyyK8XZQEajGXNSlU"); /* The image used */
+  background-color: #2A9D8F; /* Used if the image is unavailable */
+  height:800px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 50%; /* Resize the background image to cover the entire container */
+}
+
+/* @media (min-width: 768px) {
+
+} */
+
+/* on 992px OR LARGER displays */
+@media (min-width: 992px) {
+  .how-to-help {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dine-in-img {
+    display: block;
+  }
+}

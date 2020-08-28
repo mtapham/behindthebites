@@ -8,23 +8,22 @@ import {Stories} from './Stories.js';
 import {AboutUs} from './AboutUs.js';
 import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 
-import './App.css';
+import './css/App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 class App extends Component {
   render() {
     return (
       <main>
         <Header/>
-        <Router>    
-            <Switch>
-              <Route exact path="/" component={Home}/>
-              <Route path="/stories" component={Stories}/>
-              <Route path="/aboutus" component={AboutUs}/>
-            </Switch> 
-        </Router>
+          <Router>    
+              <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route path="/stories" component={Stories}/>
+                <Route path="/aboutus" component={AboutUs}/>
+              </Switch> 
+          </Router>
         <Footer/>
       </main>
     );

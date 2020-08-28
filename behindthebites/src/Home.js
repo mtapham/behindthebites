@@ -1,8 +1,7 @@
 import React, { Component } from 'react'; //import React Component
-import Container from 'react-bootstrap/Container';
 import { Grid, Cell } from 'react-mdl'
 
-import './App.css';
+import './css/App.css';
 
 // export class Home extends Component {
 //     render() {
