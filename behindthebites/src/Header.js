@@ -14,6 +14,7 @@ export class Header extends Component {
                             <Nav.Link href="/stories">Stories</Nav.Link>
                             <Nav.Link href="/aboutus">About Us</Nav.Link>
                         </Nav>
+                        
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
