@@ -10,7 +10,7 @@ export class Home extends Component {
             <Container>
                 <div className="landing-pic">
                     <div className="title">Behind the Bites</div>
-                    <div className="statement">Behind the Bites is a resource to learn about small Seattle restaurants.</div>
+                    <div className="statement">Learn more about the authentic and inspiring stores behind the local restaurants in Seattle!</div>
                     <div className="extra-space"></div>
                     <div className="story-title">Featured Story: Earl's on the Ave.</div>
                     <div className="earls-image">
