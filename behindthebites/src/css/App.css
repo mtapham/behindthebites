@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.nav-brand, h1, .card-title {
+.nav-brand, h1, .card-title, .title, .story-title, .more-stories{
   font-family: 'Karla';
 }
 
@@ -56,6 +56,7 @@ p, .card-title, .card-text {
 }
 
 .statement {
+  font-size: 1em;
   top: 50px;
   height: 200px;
   line-height: 280px;
