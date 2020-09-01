@@ -41,8 +41,8 @@ p, .card-title, .card-text {
   /* background: rgb(233,196,106);
   background: linear-gradient(180deg, rgba(233,196,106,1) 0%, rgba(244,162,97,1) 81%); */
   background: #FCCCBD; 
-  height: 1300px;
   width: 100%;
+  padding-bottom: 5em;
 }
 
 .title {
@@ -51,6 +51,8 @@ p, .card-title, .card-text {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 60px;
+  color: white;
+  font-family: 'Karla';
 }
 
 .statement {
@@ -62,7 +64,8 @@ p, .card-title, .card-text {
   width: 80%;
   /* padding: 10px; */
   position: relative;
-  border: 3px solid #212529;
+  font-size: medium;
+  /* border: 3px solid #212529; */
 }
 
 /* .extra-space {
@@ -72,11 +75,13 @@ p, .card-title, .card-text {
 } */
 
 .story-title{
-  position: relative;
-  top: 150px;
+  /* position: relative; */
+  top: 100px;
   text-align: center;
   font-size: 30px;
   margin: 0 auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .earls-image{
@@ -88,27 +93,28 @@ p, .card-title, .card-text {
 }
 
 .story-text{
-  position: relative;
+  /* position: relative; */
   top: 190px;
   padding: 5px;
-  width: 60%;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   font-size: large;
+  padding-top: 2em;
 }
 
 .more-stories{
-  position: relative;
+  /* position: relative; */
   top: 270px;
   font-size: 24px;
   padding: 5px;
-  width: 40%;
+  width: 70%;
   text-align: center;
   margin: 0 auto;
 }
 
 .link{
-  position: relative;
+  /* position: relative; */
   top: 270px;
   font-size: 24px;
   padding: 5px;
@@ -309,8 +315,46 @@ hr {
   
 }
 
+.linkss {
+  color: #212529;
+  padding-right: 2%;
+}
+
+.linkcontainer {
+  width: 100%;
+}
+
 /* END FOOTER */
 
+/* About Us Style */
+.piccontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pics {
+  width: 100%;
+  height: 100%;
+}
+
+.picwords {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+.name {
+  font-size: 1.2em;
+}
+
+.homepic {
+  width: 30%;
+  height: 100%;
+  box-shadow: 10px 10px 5px #ccc;
+}
 
 @media (min-width: 750px) {
 

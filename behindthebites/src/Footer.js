@@ -16,12 +16,19 @@ export class Footer extends Component {
                                     <h5 className="footer-title">Behind the Bites</h5>
                                 </Row>
                                 <Row>
-                                    <ul className="links">
+                                    {/* <ul className="links">
                                         <li><a href="/">Home</a></li>
                                         <li><a href="/stories">Stories</a></li>
                                         <li><a href="/aboutus">About Us</a></li>
                                         <li><a href="https://github.com/mtapham/behindthebites" target="_blank" rel="noopener noreferrer">Github</a></li>
-                                    </ul>
+                                    </ul> */}
+
+                                    <span class="linkcontainer">
+                                        <a href="/" class="linkss">Home</a>
+                                        <a href="/stories" class="linkss">Stories</a>
+                                        <a href="/aboutus" class="linkss">About Us</a>
+                                        <a href="https://github.com/mtapham/behindthebites" target="_blank" rel="noopener noreferrer" class="linkss">Github</a>
+                                    </span>
                                 </Row>
                             </Col>
                         </Row>
