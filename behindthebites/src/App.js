@@ -7,12 +7,11 @@ import {Home} from './Home.js';
 import {Stories} from './Stories.js';
 import {AboutUs} from './AboutUs.js';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-
 import './css/App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
       <main>
@@ -31,3 +30,4 @@ class App extends Component {
 }
 
 export default App;
+

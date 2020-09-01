@@ -134,12 +134,12 @@ export class RestaurantRow extends Component {
                 <Card className={classes.root, "restaurant-row"} >
                     <CardContent>
                         <Row>
-                            <Col xs={12} md={4}>
+                            <Col sm={12} md={5}>
                                 <Carousel className="preview-carousel">
                                     {carouselPhotoPreview}
                                 </Carousel>                        
                             </Col>
-                            <Col xs={12} md={8} onClick={this.handleClick}>
+                            <Col sm={12} md={7} onClick={this.handleClick}>
                                 <Typography variant="h5" component="h2" style={{fontFamily: "Lato", fontWeight:"700", fontSize: "1.3em", marginBottom: ".1em"}}>{restaurant.name}</Typography>
                                 <Typography className={classes.pos} color="textSecondary" style={{fontFamily: "Lato", fontWeight:"400", fontSize: ".8em", marginBottom: ".7em"}}>Since {restaurant.year}</Typography>
                                 <Chip label={restaurant.area} variant="outlined" className="tag"/>
@@ -159,12 +159,12 @@ export class RestaurantRow extends Component {
                     <Modal.Body>
                         <Container>
                             <Row>
-                                <Col xs={12} md={5}>
+                                <Col sm={12} lg={5}>
                                     <Carousel autoPlay autoPlayInterval="3000" className="modal-carousel">
                                         {carouselPhoto}
                                     </Carousel>
                                 </Col>
-                                <Col xs={12} md={7}>
+                                <Col sm={12} lg={7}>
                                     <Card className="restaurant-contact-info" variant="outlined">
                                         <CardContent>
                                             <Container>
@@ -390,44 +390,53 @@ export class Stories extends Component {
                 <Row>
                     <Col className="search-restaurants-banner-contents">
                         <Jumbotron fluid className="bg-text" style={{background: "none"}}>
-                            <h1>Select a Neighborhood</h1>
-                            <p>Learn more about the unique local restaurants that make up Seattle rich food scene!</p>
-                            <div>
-                                <FormControl variant="filled" className={classes.formControl} style={{minWidth: 200, marginRight: '1em'}}>
-                                    <InputLabel id="demo-simple-select-filled-label" style={{color: "white"}} >Seattle Neighborhood</InputLabel>
-                                    <Select
-                                        labelId="demo-simple-select-filled-label"
-                                        id="demo-simple-select-filled"
-                                        value={this.state.neighborhood}
-                                        onChange={this.selectNeighborhood}
-                                        style={{color: "white"}}
-                                    >
-                                        <MenuItem value="University District">University District</MenuItem>
-                                        <MenuItem value="Capital Hill">Capital Hill</MenuItem>
-                                        <MenuItem value="International District">International District</MenuItem>
-                                    </Select>
-                                </FormControl>
+                            <Row>
+                                <h1>Select a Neighborhood</h1>
+                                <p>Learn more about the unique local restaurants that make up Seattle rich food scene!</p>
+                            </Row>
+                            <Row>
+                                <Col xs={12} lg={5} xl={4} className="filter-neighborhoods">
+                                    <FormControl variant="filled" className={classes.formControl} style={{minWidth: 200,marginBottom: '1em'}}>
+                                        <InputLabel id="demo-simple-select-filled-label" style={{color: "white"}} >Seattle Neighborhood</InputLabel>
+                                        <Select
+                                            labelId="demo-simple-select-filled-label"
+                                            id="demo-simple-select-filled"
+                                            value={this.state.neighborhood}
+                                            onChange={this.selectNeighborhood}
+                                            style={{color: "white"}}
+                                        >
+                                            <MenuItem value="University District">University District</MenuItem>
+                                            <MenuItem value="Capital Hill">Capital Hill</MenuItem>
+                                            <MenuItem value="International District">International District</MenuItem>
+                                        </Select>
+                                    </FormControl>                                
+                                </Col>
+                                <Col xs={12} lg={5} xl={4} className="filter-tags">
+                                    <FormControl variant="filled" className={classes.formControl} style={{minWidth: 200, marginBottom: '1em'}}>
+                                        <InputLabel id="demo-simple-select-filled-label" style={{color: "white"}}>Tags</InputLabel>
+                                        <Select
+                                            labelId="demo-simple-select-filled-label"
+                                            id="demo-simple-select-filled"
+                                            value={this.state.filter}
+                                            onChange={this.selectTag}
+                                            style={{color: "white"}}
+                                        >
+                                            <MenuItem value="Women-Owned">Women-Owned</MenuItem>
+                                            <MenuItem value="Black-Owned">Black-Owned</MenuItem>
+                                            <MenuItem value="Minority-Owned">Minority-Owned</MenuItem>
+                                        </Select>
+                                    </FormControl>
                                 
-                                <FormControl variant="filled" className={classes.formControl} style={{minWidth: 200, marginRight: '1em'}}>
-                                    <InputLabel id="demo-simple-select-filled-label" style={{color: "white"}}>Tags</InputLabel>
-                                    <Select
-                                        labelId="demo-simple-select-filled-label"
-                                        id="demo-simple-select-filled"
-                                        value={this.state.filter}
-                                        onChange={this.selectTag}
-                                        style={{color: "white"}}
-                                    >
-                                        <MenuItem value="Women-Owned">Women-Owned</MenuItem>
-                                        <MenuItem value="Black-Owned">Black-Owned</MenuItem>
-                                        <MenuItem value="Minority-Owned">Minority-Owned</MenuItem>
-                                    </Select>
-                                </FormControl>
-                                <Button size="medium" className={classes.margin} onClick={this.handleReset}>Reset</Button>
-                            </div>
+                                </Col>
+                                <Col xs={12} xl={2} className="reset-btn">
+                                    <Button size="medium" className={classes.margin} onClick={this.handleReset}>Reset</Button>
+
+                                </Col>
+                            </Row>
                         </Jumbotron>
                     </Col>
-                    <Col>
-                        <img src={dinein} className="dine-in-img"/>
+                    <Col className="dinein-img-col">
+                        <img src={dinein} className="dine-in-img" alt="people dining in"/>
                     </Col>
                 </Row>
                 <Row>

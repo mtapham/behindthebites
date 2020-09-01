@@ -28,7 +28,7 @@ export class Footer extends Component {
                         <hr className="footer-credits-divider"/>
                         <Row className="footer-credits">
                             <Container>
-                                <p>Behind the Bites ·&nbsp;
+                                <p className="footer-credits">Behind the Bites ·&nbsp;
                                     <span>&copy; 2020 Nick Nagari, Michelle Pham, Larry Shan, Lucinda Zhang</span>
                                 </p>
                             </Container>
